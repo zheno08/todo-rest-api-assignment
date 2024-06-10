@@ -4,6 +4,9 @@ const port = 3000;
 
 app.use(express.json());
 
+// this is the project link on github
+// https://github.com/zheno08/todo-rest-api-assignment
+
 let todos = [
   { id: 1, task: 'Learn Express.js', completed: false },
   { id: 2, task: 'Build a REST API', completed: false }
