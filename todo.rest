@@ -1,0 +1,35 @@
+# Get all to-do items
+GET http://localhost:3000/todos
+Accept: application/json
+
+###
+
+# Get a single to-do item by ID
+GET http://localhost:3000/todos/1
+Accept: application/json
+
+###
+
+# Add a new to-do item
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "task": "Complete assignment"
+}
+
+###
+
+# Update a to-do item
+PUT http://localhost:3000/todos/1
+Content-Type: application/json
+
+{
+  "task": "Complete assignment",
+  "completed": true
+}
+
+###
+
+# Delete a to-do item
+DELETE http://localhost:3000/todos/1
